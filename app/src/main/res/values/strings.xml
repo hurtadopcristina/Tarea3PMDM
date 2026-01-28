@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Tarea3_HurtadoPorras_Cristina</string>
+    <string name="episodes">Episodios</string>
+    <string name="stats">Estadísticas</string>
+    <string name="setting">Ajustes</string>
+    <string name="settings">Ajustes</string>
+    <string name="about">Acerca de</string>
+    <string name="toast_text">Error al iniciar sesión.</string>
+    <string name="navigation_drawer_open">Abrir menú de navegación</string>
+    <string name="navigation_drawer_close">Cerrar menú de navegación</string>
+    <string name="todos">Todos</string>
+    <string name="vistos">Vistos</string>
+    <string name="visto">Visto</string>
+    <string name="no_visto">No Visto</string>
+    <string name="idioma">Idioma</string>
+    <string name="espa_ol">Español</string>
+    <string name="ingles">Inglés</string>
+    <string name="tema">Tema</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="stats_texto1">Has visto %1$d de %2$d episodios</string>
+    <string name="stats_texto2">%1$d%% COMPLETADO</string>
+    <string name="about_text">Aplicación desarrollada por Cristina Hurtado Porras. Versión 1.0.</string>
+    <string name="personajes">Personajes:</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/episodesFragment">
+
+    <fragment
+        android:id="@+id/episodesFragment"
+        android:name="dam.pmdm.tarea3_hurtadoporras_cristina.EpisodesFragment"
+        android:label="fragment_episodes"
+        tools:layout="@layout/fragment_episodes">
+        <action
+            android:id="@+id/action_episodesFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="dam.pmdm.tarea3_hurtadoporras_cristina.StatsFragment"
+        android:label="fragment_stats"
+        tools:layout="@layout/fragment_stats" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="dam.pmdm.tarea3_hurtadoporras_cristina.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="dam.pmdm.tarea3_hurtadoporras_cristina.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+</navigation>

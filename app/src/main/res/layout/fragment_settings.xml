@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde_suave">
+
+    <TextView
+        android:id="@+id/settings_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/radio_language"
+        android:paddingTop="35dp"
+        android:paddingStart="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/azul_oscuro"
+        android:text="@string/idioma"/>
+
+    <RadioGroup
+        android:id="@+id/radio_language"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/settings_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="15dp">
+
+        <RadioButton
+            android:id="@+id/radio_es"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/azul_oscuro"
+            android:textSize="18dp"
+            android:text="@string/espa_ol"/>
+
+        <RadioButton
+            android:id="@+id/radio_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/azul_oscuro"
+            android:textSize="18dp"
+            android:text="@string/ingles"/>
+    </RadioGroup>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_theme"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/radio_language"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingTop="25dp"
+        android:paddingStart="15dp"
+        android:paddingBottom="25dp"
+        android:textSize="20dp"
+        android:text="@string/tema"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/switch_theme"
+        android:textSize="18dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:text="@string/cerrar_sesion"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

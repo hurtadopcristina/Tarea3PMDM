@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailsFragment"
+    android:background="@color/verde_suave">
+
+    <TextView
+        android:id="@+id/detail_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:background="@color/azul_oscuro"
+        android:textColor="@color/verde_neon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lawnmower Dog"/>
+
+    <TextView
+        android:id="@+id/detail_episode"
+        app:layout_constraintTop_toBottomOf="@+id/detail_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="30dp"
+        android:padding= "15dp"
+        android:paddingBottom="25dp"
+        android:textSize="20dp"
+        android:textColor="@color/azul_oscuro"
+        android:text="S01E02"/>
+
+    <TextView
+        android:id="@+id/detail_airDate"
+        app:layout_constraintTop_toBottomOf="@+id/detail_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:paddingBottom="25dp"
+        android:textColor="@color/azul_oscuro"
+        android:text="December 9, 2013"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/viewed_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/detail_airDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/notviewed_button"
+        android:background="@color/amarillo"
+        android:text="@string/visto"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/notviewed_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/detail_episode"
+        app:layout_constraintStart_toEndOf="@id/viewed_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/amarillo"
+        android:text="@string/no_visto"/>
+
+    <TextView
+        android:id="@+id/detail_characters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/viewed_button"
+        android:textSize="20dp"
+        android:textColor="@color/azul_oscuro"
+        android:paddingTop="20dp"
+        android:paddingStart="15dp"
+        android:paddingBottom="10dp"
+        android:text="@string/personajes"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/detail_characters"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

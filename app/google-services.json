@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1045399747835",
+    "project_id": "tarea3-5f1e9",
+    "storage_bucket": "tarea3-5f1e9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045399747835:android:04a1c08c59681aea7f845e",
+        "android_client_info": {
+          "package_name": "dam.pmdm.tarea3_hurtadoporras_cristina"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ZwRCbRPdu2OY6iW-bj0I0t5SLhCZz_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

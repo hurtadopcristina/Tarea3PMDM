@@ -14,7 +14,7 @@ class EpisodeRepository {
             .document(auth.currentUser!!.uid)
             .collection("episodio")
 
-    // Guardar / actualizar episodio como visto o no visto
+
     fun saveEpisodeAsViewed(episode: Episode) {
         val episodeData = hashMapOf(
             "name" to episode.name,
@@ -43,7 +43,6 @@ class EpisodeRepository {
             .set(episodeData)
     }
 
-    // Obtener episodios vistos del usuario
     fun getAllEpisodesWithViewed(
         apiEpisodes: List<Episode>,
         onResult: (List<Episode>) -> Unit

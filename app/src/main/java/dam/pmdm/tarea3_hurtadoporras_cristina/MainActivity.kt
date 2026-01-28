@@ -20,10 +20,13 @@ class MainActivity : AppCompatActivity() {
 
     // Binding de la actividad principal
     private lateinit var binding: ActivityMainBinding
+
+    // Toggle para abrir y cerrar el menú lateral
     private lateinit var drawerToggle: ActionBarDrawerToggle
+
+    // ViewModel que gestiona la carga y observación de los episodios.
     private val episodeViewModel: EpisodeViewModel by viewModels()
-
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         applyLocale(this)
         super.onCreate(savedInstanceState)

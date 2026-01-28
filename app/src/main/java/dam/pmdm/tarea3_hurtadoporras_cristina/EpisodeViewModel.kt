@@ -31,7 +31,7 @@ class EpisodeViewModel: ViewModel() {
     fun toggleEpisodeViewed(episode: Episode) {
         episode.viewed = !episode.viewed
         repository.saveEpisodeAsViewed(episode)
-        // Actualiza la lista en vivo
+
         _episodes.value = _episodes.value?.map {
             if (it.episode == episode.episode) episode else it
         }
@@ -40,7 +40,7 @@ class EpisodeViewModel: ViewModel() {
     fun toggleEpisodeNotViewed(episode: Episode) {
         episode.viewed = !episode.viewed
         repository.saveEpisodeAsNotViewed(episode)
-        // Actualiza la lista en vivo
+
         _episodes.value = _episodes.value?.map {
             if (it.episode == episode.episode) episode else it
         }

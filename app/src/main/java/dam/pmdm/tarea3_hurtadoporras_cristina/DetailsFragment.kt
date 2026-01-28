@@ -55,7 +55,7 @@ class DetailsFragment : Fragment() {
                 episode = binding.detailEpisode.text.toString(),
                 airDate = binding.detailAirDate.text.toString(),
                 characters = charactersViewModel.characters.value?.map { it.name } ?: emptyList(),
-                viewed = true // temporal, se actualizará en ViewModel
+                viewed = true
             )
             val episodeViewModel: EpisodeViewModel by viewModels({requireActivity()})
             episodeViewModel.toggleEpisodeViewed(episode)
